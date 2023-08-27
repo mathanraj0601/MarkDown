@@ -24,7 +24,7 @@ below are the examples and the results of the tags
 ```
 > Tip :
 > 1. Always try to nest the heading incorrectly way that helps to have a table of content
-> 1. only one # heading 1 in the markdown file
+> 1. Only one # heading 1 in the markdown file
 
 ### Output :
 # heading1
@@ -159,7 +159,7 @@ output
 * three
 
 ```
-> Tip : it is recommended to use '-' over '*' so that no confusion between bold and unordered list.
+> Tip: it is recommended to use '-' over '*' to avoid confusion between bold and unordered lists.
 
 Task list
 very use full in PR and issue where we show the progress in comment
@@ -221,7 +221,7 @@ output
 || use to give a cell
 :--- left align
 :---: center align
----: right alignn
+---: right align
 ```
 
 output
@@ -233,89 +233,129 @@ output
 
 
 
+<details>
+ <summary>
+  Block and Inline element
+ </summary>
+
 ```
-code
 
-it is used as inline and block element as it help us to write code in particular language , show the diff or changes what we make
 
-this is a 'inline' element
+it is used as an inline and block element as it helps us to write code in a particular language, show the diff or changes that we make
 
+this is an 'inline' element
+
+> Note: The actual syntax is ``` for closing and ending. Ignore the quotation in the code below
 ```
 output
 
-this is a 'inline' element
+this is an 'inline' element
 
-'''
+```
+
+"```
 Block element
-'''
+``"
 
-'''ts
+Code in Typescript
+
+"``` ts
     const first name='mathan'
-'''
+```"
 
-''' diff
+Show the difference
+
+"``` diff
 +const first name='mathan raj
 -const first name='mathan'
-'''
+```"
 
+```
 output
 
-'''
+```
 Block element
-'''
+```
 
-'''ts
+
+``` ts
     const first name='mathan'
-'''
+```
 
-''' diff
+``` diff
 + const first name='mathan raj
 - const first name='mathan'
-'''
+```
 
-Quotes 
+</details>
 
-it is very helpful in mentioninng the context and answering the question
+<details>
+ <summary>
+  Quotes
+ </summary>
+
+```
+it is very helpful in mentioning the context and answering the question
 
 Q/A
 
->who are you
-i am mathan
+> Who are you
+I am Mathan
 
+```
 output
 
-> who are you
+> Who are you
 
-i am mathan
+I am Mathan
 
-context
+</details>
 
->can we go with option 2 
-Yes  we can go with option 2 it a great way of doing it
+<details>
+ <summary>
+  context
+</summary>
+ 
+```
+> Can we go with option 2 
+Yes  we can go with option 2 it is a great way of doing it
 
+```
 output
 
-> can we go with option 2 
+> Can we go with option 2 
 
-Yes  we can go with option 2 it a great way of doing it
+Yes  we can go with option 2 it is a great way of doing it
 
+</details>
 
-Comments
-We can use the same comments we use in html to comment  ini markdown
-"<!--  -->"
+<details>
+ <summary>
+  Comments
+ </summary>
 
-Example
+```
+We can use the same comments we use in HTML to comment  on markdown
+"<!-- This is a comment  -->"
 
-This is a comment
+```
+Output
+<!-- This is a comment -->
+>  Note: Commented text is not visible
 
-<!-- This a  commnet -->
+</details>
 
+<details>
+ <summary>
+  Collapsable content
 
-Collapsable content
+ </summary>
+ 
 
+```
 To have collapsable content like expand and view 
 
-we use two tags like summary,details
+we use two tags like summary, details
 
 <details>
 <summary> 
@@ -324,6 +364,7 @@ we use two tags like summary,details
     You have clicked
 </details>
 
+```
 output
 
 <details>
@@ -333,4 +374,8 @@ output
     You have clicked
 </details>
 
-We can use markdown and html in the same page but cannot mix in the same component
+</details>
+
+```
+ Note: We can use markdown and HTML on the same page but cannot mix in the same component
+```
